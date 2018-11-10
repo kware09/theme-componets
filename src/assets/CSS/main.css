@@ -1,0 +1,143 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+ @tailwind preflight;
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+ @tailwind components;
+ 
+ /**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+ 
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+ @tailwind utilities;
+ 
+ /**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */
+  .theme-startup {
+    --color-bg-primary: #ff73b3;
+    --color-bg-primary-darker:  #ff55a1;
+
+    --color-bg-secondary: #6f72b9;
+    --color-bg-secondary-darker: #5659bd;
+    --color-bg-default: #fff;
+    --color-bg-default-darker: rgb(245, 245, 245);
+    --color-bg-inverse: #5255AC;
+    --color-bg-inverse-darker: rgb(72, 75, 155);
+
+    --color-text-primary: #fff;
+    --color-text-secondary: #44467b;
+    --color-text-default: #373737;
+    --color-text-default-soft: #6a6a6a;
+    --color-text-inverse: #fff;
+    --color-text-inverse-soft: rgba(255, 255, 255, 0.7);
+
+    --font-display: Futura, Trebuchet MS, Arial, sans-serif;
+    --font-body: Futura, Trebuchet MS, Arial, sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-display: 600;
+    --font-weight-btn: 600;
+
+    --rounded-btn: 9999px;
+}
+
+.theme-boring {
+    --color-bg-primary: #0252cc;
+    --color-bg-primary-darker: #01409e;
+    --color-bg-secondary: #ffc402;
+    --color-bg-secondary-darker: #d8a600;
+    --color-bg-default: #fff;
+    --color-bg-default-darker: rgb(235, 235, 235);
+    --color-bg-inverse: #fff;
+    --color-bg-inverse-darker: rgb(231, 231, 231);
+
+    --color-text-primary: #fff;
+    --color-text-secondary: #755f17;
+    --color-text-default: #444;
+    --color-text-default-soft: #999;
+    --color-text-inverse: #444;
+    --color-text-inverse-soft: #999;
+
+    --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-display: 400;
+    --font-weight-btn: 600;
+
+    --rounded-btn: .25rem;
+}
+
+.theme-elegant {
+    --color-bg-primary: #c0b283;
+    --color-bg-primary-darker: #ada177;
+    --color-bg-secondary: #dcd0c0;
+    --color-bg-secondary-darker: #c4b7a6;
+    --color-bg-default: #f4f4f4;
+    --color-bg-default-darker: #dfdfdf;
+    --color-bg-inverse: #373737;
+    --color-bg-inverse-darker: #535353;
+
+    --color-text-primary: #fff;
+    --color-text-secondary: #927e7e;
+    --color-text-default: #373737;
+    --color-text-default-soft: #6a6a6a;
+    --color-text-inverse: #fff;
+    --color-text-inverse-soft: #bbb;
+
+    --font-display: Georgia, Times, "Times New Roman", serif;
+    --font-body: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-display: 400;
+    --font-weight-btn: 600;
+
+    --rounded-btn: 0;
+}
