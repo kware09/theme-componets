@@ -1,5 +1,5 @@
 <template>
-  <div class="w-4/5 m-auto bg-default shadow mt-5 h-screen">
+  <div class="w-4/5 m-auto bg-default shadow mt-5">
     <div class="flex justify-between p-16">
     <primary-button label='Primary Button'/>
     <secondary-button label='Secondary Button'/>

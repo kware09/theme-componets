@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-bind:class="theme">
+  <div id="app" v-bind:class="theme" class="bg-inverse h-screen">
     <input type="radio" id="one" value="theme-startup" v-model="theme">
     <label for="one">Modern</label>
     <br>
@@ -19,11 +19,11 @@ export default {
   name: 'MainPage',
   data() {
     return {
-      theme: 'theme-elegant',
+      theme: 'theme-startup',
     };
   },
 };
 </script>
 <style>
-  body {background:rgb(247, 247, 247)}
+  body {background:rgb(96, 119, 119)}
 </style>
