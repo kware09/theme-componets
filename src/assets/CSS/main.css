@@ -86,6 +86,9 @@
     --font-weight-btn: 600;
 
     --rounded-btn: 9999px;
+
+    --shadow-theme: "0 2px 4px 0 rgba(0,0,0,0.10)";
+
 }
 
 .theme-boring {
@@ -113,6 +116,8 @@
     --font-weight-btn: 600;
 
     --rounded-btn: .25rem;
+
+    --shadow-theme: "inset 0 2px 4px 0 rgba(0,0,0,0.06)";
 }
 
 .theme-elegant {
@@ -140,4 +145,6 @@
     --font-weight-btn: 600;
 
     --rounded-btn: 0;
+
+    --shadow-theme: "none";
 }

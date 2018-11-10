@@ -67,6 +67,8 @@ config.borderRadius = {
   btn: 'var(--rounded-btn)',
 };
 
+config.shadows.theme = 'var(--shadow-theme)';
+
 config.padding = Object.assign({}, config.padding, {
   16: '4rem',
 });
